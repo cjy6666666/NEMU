@@ -16,7 +16,7 @@ static make_helper(_2byte_esc);
 		m.val = instr_fetch(eip + 1, 1); \
 		return concat(opcode_table_, name) [m.opcode](eip); \
 	}
-	
+	/**/
 /* 0x80 */
 make_group(group1_b,
 	inv, inv, inv, inv, 
